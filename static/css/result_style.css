@@ -1,0 +1,122 @@
+/* Add this to your CSS file (styles.css) */
+body {
+  background-image: url("pic-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+p {
+  color: black;
+}
+
+.movie-name{
+    color: rgba(21, 167, 165, 0.886);
+}
+
+/* Navbar styles */
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar .logo span {
+  font-size: 24px;
+  text-decoration: none; /* Remove underline from the company name */
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Navbar styles on hover */
+.nav-links a:hover {
+  border-bottom: 2px solid white;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: 80px
+}
+
+.selection-container {
+  text-align: center;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.6
+  ); /* Adjust the alpha value for transparency */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+button {
+  width: 180px;
+  padding: 12px;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  outline: none;
+  cursor: pointer;
+  background-color: rgba(
+    0,
+    1,
+    1,
+    0.838
+  ); /* Adjust the alpha value for transparency */
+  color: #fffbfb;
+  margin-top: 10px;
+  transition: background-color 0.3s, border 0.3s;
+}
+
+ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0;
+}
+
+ul li {
+  text-align: center; /* Center the recommended movies */
+  color: #020303;
+}
+
+button:hover {
+  background-color: transparent;
+  border: 2px solid #090a0a; /* Add a border on hover */
+  color: #020303;
+}
